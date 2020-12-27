@@ -7,7 +7,6 @@ header {
   width: 100%;
   display: inline-block;
   padding: 1rem 0;
-  border: 1px solid #444141;
 }
 
 header nav {
@@ -27,7 +26,6 @@ header nav a:hover {
 #text {
   padding: 5rem 0 2rem 0;
   text-align: center;
-  border: 1px solid red;
 }
 
 form {
@@ -48,9 +46,10 @@ form {
 }
 
 form > input {
-  width: 40%;
+  width: 35%;
   border-radius: 2rem;
-  font-size: 2rem;
+  border: 1px solid #444141;
+  padding: 0.5rem;
 }
 
 form > input:hover {

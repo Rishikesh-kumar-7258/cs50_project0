@@ -9,7 +9,7 @@ header{
     display: inline-block;
     padding: 1rem 0;
     // background-color: orange;
-    border: 1px solid $borderc;
+    // border: 1px solid $borderc;
 
     nav{
         float: right;
@@ -30,7 +30,7 @@ header{
 #text{
     padding: 5rem 0 2rem 0;
     text-align: center;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 form{
@@ -41,9 +41,10 @@ form{
     justify-content: center;
 
     >input{
-        width: 40%;
+        width: 35%;
         border-radius: 2rem;
-        font-size: 2rem;
+        border: 1px solid $borderc;
+        padding:0.5rem;
     }
     >input:hover{
         //box shadow : offset-x offset-y blur-radius spread-radius
