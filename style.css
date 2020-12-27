@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: inline-block;
+  padding: 1rem 0;
+  border: 1px solid #444141;
+}
+
+header nav {
+  float: right;
+  position: relative;
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+#text {
+  padding: 5rem 0 2rem 0;
+  text-align: center;
+  border: 1px solid red;
+}
+
+form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form > input {
+  width: 40%;
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+
+form > input:hover {
+  -webkit-box-shadow: 1px 1px 4px 2px #757373;
+          box-shadow: 1px 1px 4px 2px #757373;
+}
+
+form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1rem;
+}
+
+form div input {
+  width: 30%;
+  font-size: 1.2rem;
+  padding: 2px;
+}
+
+form div input:hover, form div a:hover {
+  -webkit-box-shadow: 1px 1px 4px 1px #444141;
+          box-shadow: 1px 1px 4px 1px #444141;
+}
+
+form div a {
+  border: 1px solid #444141;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: #f8f9fa;
+  color: black;
+  padding: 2px 0.3rem;
+}
+/*# sourceMappingURL=style.css.map */
