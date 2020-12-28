@@ -34,37 +34,38 @@ header{
 }
 
 form{
-    width: 100%;
+    width: 500px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     >input{
-        width: 35%;
+        width: 100%;
         border-radius: 2rem;
         border: 1px solid $borderc;
         padding:0.5rem;
     }
     >input:hover{
         //box shadow : offset-x offset-y blur-radius spread-radius
-        box-shadow: 1px 1px 4px 2px rgb(117, 115, 115);
+        box-shadow: 1px 1px 4px 2px rgb(212, 207, 207);
     }
 
     div{
         display: flex;
-        width: 20%;
+        width: 100%;
         align-items:center;
         justify-content:space-around;
         margin: 1rem;
 
         input{
-            width: 30%;
+            width: 40%;
             font-size: 1.2rem;
             padding: 2px;
         }
         input:hover,a:hover{
-            box-shadow: 1px 1px 4px 1px $borderc;
+            box-shadow: 1px 1px 4px 1px  rgb(212, 207, 207);
         }
         a{
             border: 1px solid $borderc;
@@ -74,6 +75,47 @@ form{
             background-color: #f8f9fa;
             color: black;
             padding: 2px 0.3rem;
+        }
+    }
+}
+@media (min-width:450px) and (max-width:800px){
+    img{
+        width:40vw;
+    }
+    #text{
+        padding: 3rem 0 1rem 0;
+        height: 20%;
+    }
+    form{
+        width:60vw;
+    }
+}
+@media (max-width:450px){
+    img{
+        width:40vw;
+    }
+    #text{
+        padding: 3rem 0 1rem 0;
+        height: 20%;
+        // font-size:0.8rem;
+    }
+    form{
+        width:60vw;
+        // border: 1px solid blue;
+        >input{
+            height:0.6rem;
+        }
+        div{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            // border: 1px solid green;
+    
+            input,a{
+                font-size:85%;
+                width: fit-content;
+            }
         }
     }
 }
