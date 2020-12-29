@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+nav div a {
+  margin: 0 20px;
+}
+
+#text {
+  width: 100%;
+  border-bottom: 1px solid #807d7d;
+  border-top: 1px solid #807d7d;
+}
+
+#text h2 {
+  margin: 0 10px;
+  padding: 20px;
+  font-weight: lighter;
+  color: red;
+}
+
+form #first_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  padding: 40px 0;
+  font-size: 0.9rem;
+}
+
+form #first_part .row {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+form #first_part .row > input, form #first_part .row .srowmid {
+  width: 95%;
+  height: 30px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/span 2;
+}
+
+form #first_part .row .heading, form #first_part .row .lhow {
+  font-weight: 700;
+}
+
+form #first_part .row > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form #first_part .row > div > input {
+  width: 47%;
+  height: inherit;
+}
+
+form #first_part .row .how {
+  text-align: left;
+  font-size: 0.9em;
+}
+
+form #first_part .row .lhow {
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+/*# sourceMappingURL=advance.css.map */
