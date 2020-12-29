@@ -21,7 +21,7 @@
     <section id="text">
         <h2>Advanced search</h2>
     </section>
-    <form action="https://www.google.com">
+    <form action="https://www.google.com/search">
         <div id="first_part">
             <div class="row" id="frow">
                 <p class="heading">Find pages with...</p>
@@ -29,30 +29,30 @@
             </div>
             <div class="row" id="srow">
                 <p class="about">all these words:</p>
-                <input type="text">
+                <input type="text" name="as_q">
                 <p class="how">Type the important words: tri-colour rat terrier</p>
             </div>
             <div class="row" id="trow">
                 <p class="about">this exact word or phrase:</p>
-                <input type="text">
+                <input type="text" name="as_epq">
                 <p class="how">Put exact words in quotes: "rat terrier"</p>
             </div>
             <div class="row" id="ftrow">
                 <p class="about">any of these words:</p>
-                <input type="text">
+                <input type="text" name="as_oq">
                 <p class="how">Type OR between all the words you want: miniature OR standard</p>
             </div>
             <div class="row" id="fifrow">
                 <p class="about">none of these words:</p>
-                <input type="text">
+                <input type="text" name="as_eq">
                 <p class="how">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
             </div>
             <div class="row" id="sirow">
                 <p class="about">numbers ranging from:</p>
                 <div class="srowmid">
-                    <input type="number">
+                    <input type="number" name="as_nlo">
                     <p>to</p>
-                    <input type="number">
+                    <input type="number" name="as_nhi">
                 </div>
                 <p class="how">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
             </div>

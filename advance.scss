@@ -66,6 +66,7 @@ form{
             .lhow{
                 grid-column:4;
             }
+
         }
 
     #second_part{
@@ -126,4 +127,36 @@ footer{
             margin: 10px ;
         }
     }
+}
+
+@media screen and (max-width:1050px){
+    .how,.lhow{
+        display: none;
+    }
+    
+    form #first_part .row{
+        display: flex;
+        justify-content: space-around;
+        .about{
+            width: 30%;
+        }
+    }
+    form #second_part{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        :nth-child(1){
+            padding: 0 10px;
+        }
+    }
+    form #second_part .row{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .about{
+            width: 30%;
+        }
+    }
+
 }

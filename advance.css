@@ -198,4 +198,49 @@ footer div {
 footer div p {
   margin: 10px;
 }
+
+@media screen and (max-width: 1050px) {
+  .how, .lhow {
+    display: none;
+  }
+  form #first_part .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  form #first_part .row .about {
+    width: 30%;
+  }
+  form #second_part {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  form #second_part :nth-child(1) {
+    padding: 0 10px;
+  }
+  form #second_part .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  form #second_part .row .about {
+    width: 30%;
+  }
+}
 /*# sourceMappingURL=advance.css.map */
