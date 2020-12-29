@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    div a{
+        margin: 0 20px;
+    }
+}
+#text{
+    width: 100%;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    border-top: 1px solid rgb(128, 125, 125);
+    h2{
+        margin: 0 10px;
+        padding: 20px;
+        font-weight:lighter;
+        color: red;
+    }
+}
+
+form{
+    // border: 1px solid red;
+
+    #first_part,#second_part{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height:50vh;
+        padding:40px 0;
+        font-size: 0.9rem;
+    }
+        .row{
+            width: 90%;
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(4,1fr);
+            >input,.srowmid{
+                width: 95%;
+                height: 30px;
+                grid-column: 2/span 2;
+            }
+            .heading,.lhow{
+                font-weight: 700;
+            }
+            >div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            >div>input{
+                width: 47%;
+                height: inherit;
+            }
+            .how{
+                text-align: left;
+                font-size: 0.9em;
+            }
+            .lhow{
+                grid-column:4;
+            }
+        }
+
+    #second_part{
+        height: 70vh;
+        :nth-child(1){
+            align-self: flex-start;
+            padding: 0 40px ;
+        }
+
+        ::placeholder{
+            color: black;
+            font-weight: bold;
+        }
+
+        input[type="submit"]{
+            border: 1px solid #4d90fe;
+            background-color: #4d90fe;
+            color: white;
+            height: 30px;
+            padding: 0 5px;
+            border-radius: 2px;
+        }
+        input[type="submit"]:hover{
+            background-color: #1e66d8;
+        }
+    }
+}
+#last{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    margin: 0 0 60px 60px;
+    h3{
+        margin: 10px 0;
+    }
+    a{
+        width: fit-content;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    padding: 10px 30px;
+    background-color: #f2f2f2;
+    color:  rgba(0, 0, 0, 0.54);
+
+    div{
+        display: flex;
+        p{
+            margin: 10px ;
+        }
+    }
+}
